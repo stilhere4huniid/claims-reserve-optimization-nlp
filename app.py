@@ -19,14 +19,14 @@ st.set_page_config(
 def load_resources():
     # Load the model into a Scikit-Learn wrapper to maintain compatibility with SHAP
     model = xgb.XGBRegressor()
-    model.load_model("claims_model.json")
+    model.load_model("models/claims_model.json")
     
     # Load the NLP Transformer
     nlp_model = SentenceTransformer('all-MiniLM-L6-v2')
     
     # Load SHAP assets
-    explainer = joblib.load("shap_explainer.pkl")
-    background_data = pd.read_pickle("shap_background.pkl")
+    explainer = joblib.load("models/shap_explainer.pkl")
+    background_data = pd.read_pickle("models/shap_background.pkl")
     
     return model, nlp_model, explainer, background_data
 

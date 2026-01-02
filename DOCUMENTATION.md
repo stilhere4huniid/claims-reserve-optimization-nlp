@@ -15,6 +15,6 @@
 
 ## Threshold Logic
 The tool categorizes claims based on the predicted reserve:
-- **Critical:** > $100,000
+- **Critical:** > $80,000
 - **High:** > $60,000
 - **Routine:** < $60,000

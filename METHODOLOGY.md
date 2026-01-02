@@ -14,3 +14,9 @@ We selected **XGBoost** for its ability to handle high-dimensional sparse data.
 
 ## 4. Explainability (SHAP)
 To overcome the "Black Box" nature of Gradient Boosting, we integrated **SHAP**. This breaks down the model's logic into "positive" and "negative" forces, proving to stakeholders that the model is correctly identifying high-risk keywords like "amputation" and "hospitalization."
+
+## 🚀 Future Roadmap & Model Evolution
+To move this from a Proof-of-Concept (PoC) to a production-grade insurance tool, the following iterations are proposed:
+1. **Hybrid Data Integration:** Incorporate structured features (Claimant Age, Tenured Status, State-specific Medical Indices) to improve precision.
+2. **Hyperparameter Tuning:** Implement `Optuna` for Bayesian optimization of the XGBoost learning rate and tree depth.
+3. **Low-Signal Fallback:** Develop a secondary "Heuristic Model" to handle "Thin File" narratives where NLP embeddings lack sufficient variance.

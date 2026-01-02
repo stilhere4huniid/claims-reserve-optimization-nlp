@@ -1,0 +1,17 @@
+# Core Data Science & Modeling
+pandas
+numpy
+scikit-learn
+xgboost
+joblib
+
+# NLP & Embeddings
+sentence-transformers
+torch
+
+# Visualization & Explainability
+matplotlib
+shap
+
+# Web Application
+streamlit
